@@ -1,0 +1,14 @@
+﻿@model SearchEngine.Models.FilterViewModel
+
+@{
+    ViewBag.Title = "Search";
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/myBundle")
+}
+
+<div class="form-control">
+    @Html.TextBoxFor(model => model.SearchTerm, new { @class = "form-control" })
+</div>
+
